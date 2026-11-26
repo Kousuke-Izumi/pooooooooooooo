@@ -1,0 +1,330 @@
+@charset "utf-8";
+/* ====================
+基本設定
+==================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ====================
+  全体スタイル
+==================== */
+body {
+  color: #222;
+  background-color: #fff;
+}
+
+/* ====================
+  ヘッダー
+==================== */
+header {
+  background-color: #f2f2f2;
+  padding: 0 0 60px;
+  text-align: center;
+  width: 100%;
+}
+
+/* ロゴ */
+.logo {
+  background-color: #fff;
+  padding: 20px 0;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 80px;
+}
+
+/* コピー全体 */
+.copy {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* コピー見出し */
+.copy h1 {
+  font-size: 36px;
+  color: #000;
+  line-height: 1.4;
+  margin-bottom: 32px;
+}
+
+/* コピー本文 */
+.copy p {
+  font-size: 16px;
+  color: #000;
+  line-height: 1.75;
+  margin-bottom: 5px;
+}
+
+
+/* ====================
+  メインセクション
+==================== */
+section {
+  max-width: 1200px;
+  margin: 150px auto;
+}
+
+/*** セクション見出し ***/
+section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* セクション補足ラベル */
+.section-label {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* セクションタイトル */
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #000;
+}
+
+/*** ボタン ***/
+.btn-detail {
+  border: 2px solid #1571da;
+  background-color: #fff;
+  color: #1571da;
+  display: block;
+  width: 180px;
+  height: 50px;
+  margin: 40px auto 0;
+  padding: 0 40px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ボタンホバー時 */
+.btn-detail:hover {
+  background-color: #f0f7ff;
+}
+
+
+/* ====================
+  特徴セクション
+==================== */
+.reason-cards {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+  justify-content: center;
+}
+
+/*** 理由カード ***/
+.card-reason {
+  background: url("https://placehold.jp/9197ee/ffffff/400x300.png?text=bg-img") center top / cover no-repeat;
+  width: 380px;
+  min-height: 280px;
+  padding: 20px 0;
+  border-radius: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 54px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* 番号 */
+.card-reason-number {
+  font-size: 60px;
+  font-weight: bold;
+  color: #666;
+}
+
+/* 説明文 */
+.card-reason-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  line-height: 1.5;
+}
+
+/* ====================
+  機能セクション
+==================== */
+.func-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px 30px;
+  margin-bottom: 40px;
+}
+
+/*** 機能カード ***/
+.card-func {
+  background: #f2f2f2;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+/* アイコン */
+.card-func-icon {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* テキスト領域 */
+.card-func-text {
+  flex: 1;
+}
+
+/* 機能タイトル */
+.card-func-text h3 {
+  font-size: 20px;
+  color: #1571da;
+  margin-bottom: 18px;
+}
+
+/* 機能説明 */
+.card-func-text p {
+  line-height: 1.75;
+}
+
+/* 大サイズカード */
+.card-func.large {
+  width: 565px;
+  padding: 30px 40px;
+}
+
+/* 小サイズカード */
+.card-func.small {
+  width: 366px;
+  padding: 40px;
+}
+
+/* 小サイズ用アイコン */
+.card-func.small .card-func-icon {
+  width: 100px;
+  height: 100px;
+}
+
+/* ====================
+  事例セクション
+==================== */
+.logo-cards-group {
+    border: 2px solid #f2f2f2;
+    padding: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 0;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+/* ロゴカード */
+.logo-cards {
+    width: 156px;
+    height: 60px;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px; 
+    color: #999;
+}
+
+/* ====================
+  求人セクション
+==================== */
+.recruit-cards {
+  display: flex;          /* 横並び */
+  gap: 30px;              /* 間隔 */
+  margin-bottom: 40px;    /* 下余白 */
+  justify-content: center;/* 中央寄せ */
+}
+
+/* 採用カード本体 */
+.card-recruit {
+  width: 380px;          /* 横幅 */
+  display: flex;         /* 縦並び */
+  flex-direction: column;/* 縦方向 */
+  gap: 26px;             /* 要素間隔 */
+}
+
+/* 採用画像 */
+.card-recruit-img {
+  height: 200px;         /* 高さ */
+  object-fit: cover;     /* 画像調整 */
+  display: flex;         /* 中央配置 */
+  align-items: center;   /* 縦中央 */
+  justify-content: center;/* 横中央 */
+  font-size: 12px;       /* 文字サイズ */
+  color: #999;           /* 文字色 */
+}
+
+/* 採用情報コンテンツ */
+.card-recruit-content {
+  display: flex;         /* 縦並び */
+  flex-direction: column;
+  gap: 5px;              /* 要素間隔 */
+}
+
+/* 求人タイトル */
+.card-recruit-title {
+  font-size: 20px;      /* 文字サイズ */
+  color: #1571da;       /* 強調色 */
+  font-weight: bold;    /* 太字 */
+  line-height: 1.4;     /* 行間 */
+  height: 62px;         /* 高さ固定 */
+  display: flex;        /* 中央配置 */
+  align-items: center;
+}
+
+/* 会社名 */
+.card-recruit-company {
+  font-size: 16px;      /* 文字サイズ */
+  color: #222;          /* 文字色 */
+  font-weight: bold;    /* 太字 */
+  height: 28px;         /* 高さ固定 */
+  display: flex;        /* 中央配置 */
+  align-items: center;
+}
+
+/* 募集詳細 */
+.card-recruit-info {
+  display: flex;       /* 横並び */
+  flex-wrap: wrap;     /* 折り返し */
+  gap: 10px 0;         /* 行間隔 */
+  font-size: 14px;     /* 文字サイズ */
+  margin-top: 5px;     /* 上余白 */
+}
+
+/* 項目名 */
+.card-recruit-info dt {
+  width: 6em;          /* ラベル幅 */
+  font-weight: normal; /* 通常太さ */
+  color: #333;      /* 文字色 */
+}
+
+/* 項目内容 */
+.card-recruit-info dd {
+  width: calc(100% - 6em); /* 残り幅 */
+  margin: 0;
+  font-weight: bold;      /* 太字 */
+  color: #000;            /* 文字色 */
+}
+
+
+
+/* ====================
+  フッター
+==================== */
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 14px;
+}
